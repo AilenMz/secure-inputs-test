@@ -82,7 +82,7 @@ function validateError(error) {
   return { errorMessage, errorStatus };
 }
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 3001, () => {
   console.log("The server is now running on port 3001");
   open("http://localhost:3001");
 });
